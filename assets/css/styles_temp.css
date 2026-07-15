@@ -1,0 +1,122 @@
+﻿  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+  /* VARIÃVEIS DO CSS - MODO CLARO (PADRÃƒO) */
+  :root{
+--header-height: 3.5rem;
+
+    /*cores - Modo Claro*/
+--hue: 39;
+--first-color: hsl(39, 100%, 45%);
+--first-color-alt: hsl(39, 80%, 38%);
+--title-color: hsl(228, 20%, 15%);
+--text-color: hsl(228, 10%, 40%);
+--text-color-light: hsl(228, 10%, 60%);
+--body-color: hsl(0, 0%, 98%);
+--container-color: hsl(39, 30%, 96%);
+--border-color: hsl(39, 20%, 88%);
+--card-bg: hsl(0, 0%, 100%);
+--nav-bg: hsla(0, 0%, 100%, 0.9);
+--toggle-bg: hsl(39, 20%, 88%);
+--footer-bg: hsl(39, 30%, 95%);
+
+  /*FONTES E TIPOGRAFIAS*/
+  /* 0.5rem = 8px  1rem = 16px*/
+--body-font: "Poppins", sans-serif;
+--biggest-font-size: 2rem;
+--bigger-font-size: 1.25rem;
+--h1-font-size: 1.5rem;
+--h2-font-size: 1.25rem;
+--h3-font-size: 1rem;
+--normal-font-size: .938rem;
+--small-font-size: .813rem;
+--smaller-font-size: .75rem;
+
+  /* PESO DAS FONTES ( Font Weight) */
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /* Z INDEX*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/* MODO NOTURNO */
+body.dark-mode{
+--hue: 220;
+--first-color: hsl(39, 100%, 50%);
+--first-color-alt: hsl(39, 80%, 40%);
+--title-color: hsl(228, 8%, 95%);
+--text-color: hsl(192, 4%, 74%);
+--text-color-light: hsl(228, 8%, 55%);
+--body-color: hsl(228, 15%, 20%);
+--container-color: hsl(120, 10%, 13%);
+--border-color: hsl(39, 10%, 20%);
+--card-bg: hsl(120, 10%, 16%);
+--nav-bg: hsla(228, 15%, 20%, 0.9);
+--toggle-bg: hsl(39, 10%, 25%);
+--footer-bg: hsl(120, 10%, 11%);
+}
+
+  /* Tipografia Responsiva*/
+
+@media screen and (min-width: 1152px) {
+    :root {
+    --biggest-font-size: 4rem;
+    --bigger-font-size: 2rem;
+    --h1--font-size: 2.25rem;
+    --h2--font-size: 1.5rem;
+    --h3--font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+    }
+}
+
+/* BASE */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+input,
+textarea,
+button,
+body{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body{
+    background-color: var(--body-color);
+    color: var(--text-color);
+    transition: background-color .3s, color .3s;
+}
+
+input,
+textarea,
+button{
+    outline: none;
+    border: none;
+}
+
+h1,h2,h3,h4{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img,
